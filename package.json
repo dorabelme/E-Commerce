@@ -1,0 +1,24 @@
+{
+    "name": "E-Commerce",
+    "version": "1.0.0",
+    "description": "Nodemon Command Line Tool built using Node.js and different packages.",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dorabelme/E-Commerce.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dorabelme/E-Commerce/issues"
+    },
+    "homepage": "https://github.com/dorabelme/E-Commerce#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.3"
+    }
+}
