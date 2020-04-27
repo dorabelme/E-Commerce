@@ -1,6 +1,6 @@
 # E-Commerce
 
-E-Commerce website built using Node.jj and different packages. Authentication with session cookies.
+E-Commerce website built using Node.js and different packages. Authentication with session cookies.
 
 ## Short demo:
 
