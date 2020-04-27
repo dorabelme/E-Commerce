@@ -1,18 +1,18 @@
 const layout = require('../layout');
 
 module.exports = ({ items }) => {
-    // let totalPrice = 0;
-    // for (let item of items) {
-    //     totalPrice += item.quantity * item.product.price;
-    // };
+  // let totalPrice = 0;
+  // for (let item of items) {
+  //     totalPrice += item.quantity * item.product.price;
+  // };
 
-    const totalPrice = items.reduce((prev, item) => {
-        return prev + item.quantity * item.product.price;
-    }, 0);
+  const totalPrice = items.reduce((prev, item) => {
+    return prev + item.quantity * item.product.price;
+  }, 0);
 
-    const renderedItems = items
-        .map(item => {
-            return `
+  const renderedItems = items
+    .map(item => {
+      return `
         <div class="cart-item message">
           <h3 class="subtitle">${item.product.title}</h3>
           <div class="cart-right">
@@ -35,11 +35,11 @@ module.exports = ({ items }) => {
           </div>
         </div>
       `;
-        })
-        .join('');
+    })
+    .join('');
 
-    return layout({
-        content: `
+  return layout({
+    content: `
       <div id="cart" class="container">
         <div class="columns">
           <div class="column"></div>
@@ -48,17 +48,17 @@ module.exports = ({ items }) => {
             <div>
               ${renderedItems}
             </div>
-            <div class="total message is-info">
+            <div class="total message is-dark">
               <div class="message-header">
                 Total
               </div>
               <h1 class="title">$${totalPrice}</h1>
-              <button class="button is-primary">Buy</button>
+              <button class="button is-info">Buy</button>
             </div>
           </div>
           <div class="column"></div>
         </div>
       </div>
     `
-    });
+  });
 };
