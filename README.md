@@ -5,7 +5,7 @@ E-Commerce website built using Node.js and different packages. Authentication wi
 ## Short demo:
 
 <p align ="center">
-<img src="./findr.gif" alt="command line tool app example">
+<img src="./findr_mov.gif" alt="command line tool app example">
 </p>
 
 ## Tech Stack and Dependencies
