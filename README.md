@@ -1,4 +1,4 @@
-# E-Commerce
+# Findr App
 
 E-Commerce website built using Node.js and different packages. Authentication with session cookies.
 
